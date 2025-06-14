@@ -1,64 +1,71 @@
-## Color Picker and Color Copier
+# Color Picker and Color Copier
 
-### Color Picker Interface Types
+## Color Picker Interface Types
 
-An user can pick color from different color picker interface types:
+The application provides multiple ways to select colors through different interface types:
 
-**Color Wheel**
-A circular interface that displays the full color spectrum in a wheel format.
+### 1. Color Wheel
 
-**Image Based Color Picker**
-Includes eyedropper and color sampling tools for selecting colors from images or screen content.
+- A circular interface that displays the full color spectrum in a wheel format
+- Allows intuitive color selection by clicking anywhere on the wheel
 
-**Slider-Based Pickers**
-Adjustable sliders for RGB, HSL, or other color components to precisely define colors.
+### 2. Image Based Color Picker
 
-**Gradient Bars**
-Visual bars showing gradients between colors for smooth color selection.
+- Includes eyedropper tool for sampling colors from images
+- Supports color picking from uploaded images or screen content
+- Real-time color preview while hovering
 
-**Palette Grids**
-Pre-defined color swatches arranged in grid layouts for quick selection.
+### 3. Slider-Based Controls
 
-**Input Fields**
-Direct input of color values in various formats (RGB, HSL, Hex).
+- RGB sliders for precise control of Red, Green and Blue values
+- HSL sliders for Hue, Saturation and Lightness adjustment
+- Numeric input fields for direct value entry
 
-**Recently Used Colors**
-Quick access to previously selected colors for convenience.
+### 4. Quick Selection Tools
 
-**Color Harmony Tools**
-Tools for finding complementary, analogous, and other color relationships.
+- Gradient bars for smooth transitions between colors
+- Pre-defined color palette grids for common colors
+- Recently used colors section for quick access
+- Color harmony tools for finding complementary colors
 
-### Color Formats
+## Color Format Support
 
-There are different color formats, including:
+The application supports multiple color formats for maximum compatibility:
 
-**RGB (Red, Green, Blue)**
-Format: rgb(255, 0, 0)
-Example: Red=255 (max), Green=0, Blue=0 represents pure red
+### RGB Format
 
-**HSL (Hue, Saturation, Lightness)**
-Format: hsl(0, 100%, 50%)
-Example: Hue=0° (red), Saturation=100% (fully saturated), Lightness=50% (medium brightness)
+- Standard RGB color model
+- Format: `rgb(255, 0, 0)`
+- Each channel ranges from 0-255
+- Example: `rgb(255, 0, 0)` represents pure red
 
-**Hexadecimal**
-Format: #FF0000
-Description: RGB values represented in base-16 where FF=255, 00=0, 00=0
+### HSL Format
 
-### Copy Feedback Methods
+- Intuitive Hue, Saturation, Lightness model
+- Format: `hsl(0, 100%, 50%)`
+- Hue: 0-360°, Saturation & Lightness: 0-100%
+- Example: `hsl(0, 100%, 50%)` represents pure red
 
-The following feedback methods are available for copying colors:
+### Hexadecimal Format
 
-**Button State Changes**
-Visual confirmation through button text change from "Copy" to "Copied!" accompanied by a checkmark icon.
+- Web standard hex color codes
+- Format: `#RRGGBB`
+- Each channel ranges from 00-FF
+- Example: `#FF0000` represents pure red
 
-**Color Preview Animations**
-Dynamic visual feedback through brief pulse or glow effects on the color preview.
+## Copy Functionality
 
-**Sound Feedback**
-Auditory confirmation via subtle click or chime sounds when copying.
+The application provides multiple feedback mechanisms when copying colors:
 
-**Status Bar Updates**
-Temporary display of the copied color value in the application status bar.
+### Visual Feedback
 
-**Keyboard Shortcuts**
-Native support for standard copy operations using Ctrl+C (Cmd+C on macOS).
+- Button state changes from "Copy" to "Copied!"
+- Checkmark icon appears on successful copy
+- Color preview animations with pulse effects
+- Status bar updates with copied value
+
+### System Integration
+
+- Support for keyboard shortcuts (Ctrl+C / Cmd+C)
+- Audible feedback sounds on copy
+- Clipboard integration for pasting elsewhere
