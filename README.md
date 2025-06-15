@@ -2,7 +2,7 @@
 
 A modern, feature-rich web-based color picker and copier tool built with vanilla HTML, CSS, and JavaScript. Pick colors, copy codes, and create beautiful designs with ease.
 
-![Color Picker Preview](https://img.shields.io/badge/Project-Color%20Picker-blue?style=for-the-badge&logo=palette)
+![Color Picker Preview](https://01-color-picker-copier.vercel.app/)
 
 ## ✨ Features
 
