@@ -69,3 +69,25 @@ The application provides multiple feedback mechanisms when copying colors:
 - Support for keyboard shortcuts (Ctrl+C / Cmd+C)
 - Audible feedback sounds on copy
 - Clipboard integration for pasting elsewhere
+
+### Logic Roadmap
+
+### Logic Implementation
+
+The application follows a modular architecture for maintainable code:
+
+### Core Functionality
+
+- Real-time color input monitoring and preview updates
+- Seamless color format conversions (RGB, HSL, HEX)
+- Synchronized field updates across all formats
+- One-click copy functionality with visual feedback
+- Status notifications for user actions
+
+### File Structure
+
+The codebase is organized into focused modules:
+
+- `app.js` - Core application logic and event handling
+- `colorUtils.js` - Color conversion and manipulation utilities
+- `clipboard.js` - System clipboard integration and copy features
