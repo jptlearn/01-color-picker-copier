@@ -90,4 +90,3 @@ The codebase is organized into focused modules:
 
 - `app.js` - Core application logic and event handling
 - `colorUtils.js` - Color conversion and manipulation utilities
-- `clipboard.js` - System clipboard integration and copy features
