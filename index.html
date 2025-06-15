@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+  <title>Color Picker and Color Copier</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1>Color Picker & Copier</h1>
+    <p>Pick colors, copy codes, create beautiful designs</p>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <!-- Color picker interface will go here-->
+      <div class="color-preview-section">
+        <div class="color-preview" id="colorPreview">
+          <!-- This will show the selected color -->
+        </div>
+        <div class="color-values-section">
+          <div class="color-format">
+            <label>HEX:</label>
+            <input type="text" id="hexValue" readonly />
+            <button class="copy-btn" data-format="hex">Copy</button>
+          </div>
+
+          <div class="color-format">
+            <label>RGB:</label>
+            <input type="text" id="rgbValue" readonly />
+            <button class="copy-btn" data-format="rgb">Copy</button>
+          </div>
+        </div>
+        <div class="color-input-section">
+          <label for="colorInput">Pick a Color:</label>
+          <input type="color" id="colorInput" class="color-input" />
+        </div>
+      </div>
+    </div>
+    <div class="status-message" id="statusMessage">
+      <!-- Success/Error message will go here -->
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
