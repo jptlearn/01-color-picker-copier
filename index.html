@@ -11,7 +11,7 @@
 
 <body>
   <header class="header">
-    <h1>Color Picker & Copier</h1>
+    <h1>🎨 Color Picker & Copier</h1>
     <p>Pick colors, copy codes, create beautiful designs</p>
   </header>
 
@@ -22,6 +22,10 @@
         <div class="color-preview" id="colorPreview">
           <!-- This will show the selected color -->
         </div>
+        <div class="color-name" id="colorName">
+          <!-- Color name will appear here -->
+        </div>
+
         <div class="color-values-section">
           <div class="color-format">
             <label>HEX:</label>
@@ -34,10 +38,40 @@
             <input type="text" id="rgbValue" readonly />
             <button class="copy-btn" data-format="rgb">Copy</button>
           </div>
+
+          <div class="color-format">
+            <label>HSL:</label>
+            <input type="text" id="hslValue" readonly />
+            <button class="copy-btn" data-format="hsl">Copy</button>
+          </div>
         </div>
+
         <div class="color-input-section">
           <label for="colorInput">Pick a Color:</label>
-          <input type="color" id="colorInput" class="color-input" />
+          <input type="color" id="colorInput" class="color-input" value="#667eea" />
+        </div>
+
+        <!-- Color History Section -->
+        <div class="color-history-section">
+          <h3>Recent Colors</h3>
+          <div class="color-history" id="colorHistory">
+            <!-- Recent colors will appear here -->
+          </div>
+        </div>
+
+        <!-- Preset Palettes -->
+        <div class="preset-palettes-section">
+          <h3>Popular Colors</h3>
+          <div class="preset-palette">
+            <div class="preset-color" data-color="#FF6B6B" style="background-color: #FF6B6B;" title="Coral Red"></div>
+            <div class="preset-color" data-color="#4ECDC4" style="background-color: #4ECDC4;" title="Turquoise"></div>
+            <div class="preset-color" data-color="#45B7D1" style="background-color: #45B7D1;" title="Sky Blue"></div>
+            <div class="preset-color" data-color="#96CEB4" style="background-color: #96CEB4;" title="Mint Green"></div>
+            <div class="preset-color" data-color="#FFEAA7" style="background-color: #FFEAA7;" title="Warm Yellow"></div>
+            <div class="preset-color" data-color="#DDA0DD" style="background-color: #DDA0DD;" title="Plum"></div>
+            <div class="preset-color" data-color="#98D8C8" style="background-color: #98D8C8;" title="Seafoam"></div>
+            <div class="preset-color" data-color="#F7DC6F" style="background-color: #F7DC6F;" title="Honey"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -45,6 +79,7 @@
       <!-- Success/Error message will go here -->
     </div>
   </main>
+  <script src="js/colorUtils.js"></script>
   <script src="js/app.js"></script>
 </body>
 
